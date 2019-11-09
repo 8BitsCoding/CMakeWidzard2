@@ -18,7 +18,7 @@
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>4</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="projectTab">
        <attribute name="title">
@@ -161,6 +161,13 @@
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuExport">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionExport"/>
+   </widget>
+   <addaction name="menuExport"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -171,10 +178,24 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionExport">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/prefix1/icon.jpg</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Export</string>
+   </property>
+   <property name="toolTip">
+    <string>Export CMakeList.txt</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
   <include location="CMakeWidzard2.qrc"/>
+  <include location="Resource.qrc"/>
  </resources>
  <connections/>
 </ui>
