@@ -14,6 +14,8 @@ public:
 	void insertNewIncludeDirectory(const QString&);
 	void addSource(const QString&, const QString&);
 
+	void PrepareCMakeListVariables();
+
 private slots:
 	void on_actionExport_triggered();
 	void on_AddBtn_clicked();
@@ -26,4 +28,5 @@ private slots:
 
 private:
 	Ui::CMakeWidzard2Class ui;
+	QString cmakeListResult;
 };
