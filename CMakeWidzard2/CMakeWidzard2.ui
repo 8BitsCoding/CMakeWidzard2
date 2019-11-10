@@ -18,7 +18,7 @@
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="projectTab">
        <attribute name="title">
@@ -104,29 +104,29 @@
         <item>
          <layout class="QVBoxLayout" name="verticalLayout_5">
           <item>
-           <widget class="QListWidget" name="listWidget"/>
+           <widget class="QListWidget" name="includeList"/>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_3">
+           <widget class="QPushButton" name="addincludeBtn">
             <property name="text">
              <string>+</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QTableWidget" name="tableWidget_2"/>
+           <widget class="QTableWidget" name="sourcesTable"/>
           </item>
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout_4">
             <item>
-             <widget class="QPushButton" name="pushButton_4">
+             <widget class="QPushButton" name="addsourceBtn">
               <property name="text">
                <string>Add</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_5">
+             <widget class="QPushButton" name="removesourceBtn">
               <property name="text">
                <string>Remove</string>
               </property>
@@ -144,7 +144,7 @@
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_6">
         <item>
-         <widget class="QPlainTextEdit" name="plainTextEdit_2"/>
+         <widget class="QPlainTextEdit" name="previewText"/>
         </item>
        </layout>
       </widget>
